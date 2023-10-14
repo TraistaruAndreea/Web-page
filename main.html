@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-LIST</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="title" class="header">
+        <h1>ToDo-List</h1>
+        <input type="text" id="input" placeholder="Add a new task" style="height: 20px; margin-top: 20px;">
+        <span onclick="newElement()" class="addBtn">Add</span>
+        <span onclick="checkAll()" class="BtnCheck">Check All</span>
+        <span onclick="deleteChecked()" class="BtnDelete">Delete Checked</span>
+        <span onclick="uncheckAll()" class="BtnUncheck">Uncheck All</span>
+    </div>
+    <ul id="list">
+        <li onclick="toggleTask(this)">
+            <span class="checkmark">&#10003;</span>
+            <span class="task-text">Do homework</span>
+            <span class="delete"></span>
+        </li>
+        <li onclick="toggleTask(this)">
+            <span class="checkmark">&#10003;</span>
+            <span class="task-text">Pay bills</span>
+            <span class="delete"></span>
+        </li>
+        <li onclick="toggleTask(this)">
+            <span class="checkmark">&#10003;</span>
+            <span class="task-text">Go to gym</span>
+            <span class="delete"></span>
+        </li>
+        <li onclick="toggleTask(this)">
+            <span class="checkmark">&#10003;</span>
+            <span class="task-text">Go shopping</span>
+            <span class="delete"></span>
+        </li>
+    </ul>
+    <script src = "main.js"></script>
+</body>
+</html>
